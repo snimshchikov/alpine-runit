@@ -16,6 +16,7 @@ ENV SERVICE_AVAILABLE_DIR=/etc/sv \
 ENV SVDIR=${SERVICE_ENABLED_DIR} \
     SVWAIT=7
 
+# IMPORTANT: THIS SCRIPT HAS AN EMBEDDED PHP VERSION
 ADD https://rawgit.com/dockage/runit-scripts/master/scripts/installer /opt/
 
 RUN apk update \
